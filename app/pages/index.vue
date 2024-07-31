@@ -5,4 +5,8 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+useHead({
+  title: "Cartrader",
+});
+</script>
