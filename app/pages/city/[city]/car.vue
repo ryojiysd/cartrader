@@ -28,9 +28,9 @@ const route = useRoute();
 const { toTitleCase } = useUtilities();
 
 useHead({
-  title: `${
-    route.params.make ? tiTitleCase(route.params.make) : "Cars"
-  } in ${toTitleCase(route.params.city)}`,
+  title: `${route.params.make ? route.params.make : "Cars"} in ${toTitleCase(
+    route.params.city
+  )}`,
 });
 
 definePageMeta({
